@@ -1,5 +1,5 @@
-Twistr - Stock Prediction using Opinion Mining on Twitter
-=========================================================
+Stock Prediction using Opinion Mining on Twitter
+================================================
 
 Build
 -----

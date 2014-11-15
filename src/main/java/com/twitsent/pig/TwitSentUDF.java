@@ -33,7 +33,7 @@ public class TwitSentUDF extends EvalFunc<String> {
 
 	public static String nasdaqRegex = "\\$\\b[A-Z,a-z]{1,5}\\b";
 	public static Pattern nasdaqPattern = Pattern.compile(nasdaqRegex);
-
+	
 	public static String punctuationRegex = "\\p{Punct}";
 	public static Pattern punctuationPattern = Pattern
 			.compile(punctuationRegex);

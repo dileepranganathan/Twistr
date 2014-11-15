@@ -40,10 +40,10 @@ public class TwitSentClassifierUDF extends EvalFunc<DataBag> {
 			String[] entities = tupleString.split(",");
 			String rawTweet = entities[0];
 			String pos = entities[1];
-			SWN3 swn = new SWN3("SentiWordNet_3.0.0_20130122.txt");
+			//SWN3 swn = new SWN3("SentiWordNet_3.0.0_20130122.txt");
 			double score = 0;
 			for(String tweetWord:rawTweet.split("\\s")){
-			 score += swn.extract(tweetWord,pos);
+			 //score += swn.extract(tweetWord,pos);
 			}
 			String label = String.valueOf(score);
 			Tuple tuple = tupleFactory.newTuple(rawTweet);
